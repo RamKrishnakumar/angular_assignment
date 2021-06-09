@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Find the missing no.</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h2>2,3,10,15,26,35,50,63,?</h2>
+    
+  </div>
+  <!-- <div *ngFor="let data of menuType">
+    <ion-card class="card_design1">
+        <ion-card-title style="font-weight: bold;font-size: 20px; color: black; text-align: center;margin-top: 6%;font-size: 5vw">
+          <p>{{data.title}}</p>
+        </ion-card-title>
+       </ion-card>
+       
+</div> -->
+
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let data of menuType" class="box">
+      <div>{{data.no}}</div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class='col'>
+      <div>1</div>
+    </ion-col>
+    <ion-col class='col'>
+      <div>2</div>
+    </ion-col>
+    <ion-col class='col'>
+      <div>3</div>
+    </ion-col>
+    <ion-col class='col'>
+      <div>4</div>
+    </ion-col>
+  </ion-row>
+ </ion-grid>
+
+ <ion-item padding>
+   <ion-input type="number" [(ngModel)]='option' placeholder="Please input options (1-4)"></ion-input>
+ </ion-item>
+ <div>
+   <ion-button slot="center" expand="block" color="success" (click)='submit()'>Submit</ion-button>
+ </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button size="full" color="primary" (click)=next()>Next</ion-button>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,41 @@
+<ion-content>
+  <div id="container">
+    <div class="top left">
+      <ion-text color="primary">
+        <h2>{{name}}</h2>
+      </ion-text>
+    </div>
+    <div class="top right">
+      <ion-text color="primary">
+        <h2>{{name}}</h2>
+      </ion-text>
+    </div>
+    <div class="center" style="background-color: white;">
+      <!-- <ion-item>
+        <ion-input type='text' [(ngModel)]='name' [ngModelOptions]="{standalone: true}"></ion-input>
+      </ion-item> -->
+     
+      <ion-card style="margin-top: 34%;">
+        <ion-textarea style="background-color: white; color: black;" type='text' [(ngModel)]='name' [ngModelOptions]="{standalone: true} ">
+      </ion-textarea></ion-card>
+        
+    </div>
+    <div class="bottom left">
+      <ion-text color="primary">
+        <h2>{{name}}</h2>
+      </ion-text>
+    </div>
+    <div class="bottom right">
+      <ion-text color="primary">
+        <h2>{{name}}</h2>
+      </ion-text>
+    </div>
+  </div>
+  
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button size="full" color="primary" (click)=back()>Previous</ion-button>
+  </ion-toolbar>
+</ion-footer>

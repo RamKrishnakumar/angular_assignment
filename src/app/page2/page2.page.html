@@ -1,0 +1,28 @@
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-button (click)=createComponent()>Add data</ion-button>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <div id='content-container'>
+     
+    </div>
+    
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button slot="start" (click)='back()'>
+        Previous
+      </ion-button>
+      <ion-button slot="end" (click)='next()'>
+        Next
+      </ion-button>
+    </ion-toolbar>
+  </ion-footer>
+
+
+
+  <!-- <form><ion-item><ion-input type='text' [(ngModel)]='user_input_name' placeholder='Enter name' [ngModelOptions]='{standalone: true}'></ion-input><ion-button (click)=save(user_input_name)>save</ion-button></ion-item></form> -->
+

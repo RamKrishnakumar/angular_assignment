@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Provide Contact no.
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <div>
+    <form [formGroup]="form" (ngSubmit)="manage(form.value)">
+      <div>
+        <ion-grid style="border-bottom: lightgray solid;" formArrayName="mobile" *ngFor="let phone of getmobileinfo().controls; let i = index">
+        
+            <ion-item [formGroupName]="i" >
+              <ion-input formControlName="phone" placeholder="enter no."></ion-input>
+              <ion-icon name="trash-outline" (click)="removeInputField(i)"></ion-icon>
+            </ion-item>
+        
+        </ion-grid>
+      </div>
+      <div>
+        <ion-button size="full" color="secondary" (click)=addNewInputField()>Add more</ion-button>
+      </div>
+      <div>
+        <ion-button size="full" color="secondary" type="Submit">Submit</ion-button>
+      </div>
+    </form>
+    
+  </div>
+</ion-content>
+  
+<ion-footer>
+  <ion-toolbar>
+    <ion-button slot="start" (click)='back()'>
+      Previous
+    </ion-button>
+    <ion-button slot="end" (click)='next()'>
+      Next
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+  
+
