@@ -10,16 +10,15 @@
         <h2>{{name}}</h2>
       </ion-text>
     </div>
-    <div class="center" style="background-color: white;">
-      <!-- <ion-item>
-        <ion-input type='text' [(ngModel)]='name' [ngModelOptions]="{standalone: true}"></ion-input>
-      </ion-item> -->
-     
-      <ion-card style="margin-top: 34%;">
-        <ion-textarea style="background-color: white; color: black;" type='text' [(ngModel)]='name' [ngModelOptions]="{standalone: true} ">
-      </ion-textarea></ion-card>
-        
-    </div>
+    <!-- <div class="center" style="background-color: white;">
+    </div> -->
+    
+     <!-- <ion-item>
+      <ion-textarea style="background-color: white; color: black;" type='text' [(ngModel)]='name' [ngModelOptions]="{standalone: true} "></ion-textarea>
+     </ion-item>  -->
+     <textarea type="text" class="center" [(ngModel)]='name'></textarea>
+    
+    
     <div class="bottom left">
       <ion-text color="primary">
         <h2>{{name}}</h2>

@@ -57,7 +57,7 @@ export class HomePage {
      this.router.navigate(['page3']);
    }
    back(){
-    this.router.navigate(['page1']);
+    this.router.navigate(['page2']);
   }
 
 

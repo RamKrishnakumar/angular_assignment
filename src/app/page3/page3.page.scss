@@ -11,6 +11,13 @@
     background: black;
     overflow: auto;
   }
+  #container ion-item{
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    background: blanchedalmond;
+    overflow: auto;
+  }
   .top {
     top: 0;
   }
@@ -24,7 +31,9 @@
     left: 0;
   }
   .center{
-    top: 35%;
-    left: 35%;
-    background: burlywood;
+    top: 45%;
+    left: 34%;
+    //background: burlywood;
+    position: absolute;
+    color: black;
   }
