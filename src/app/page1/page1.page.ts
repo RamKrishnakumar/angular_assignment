@@ -45,6 +45,7 @@ export class Page1Page implements OnInit {
     await alert.present();
   
   }
+  
   async invalid() {
     const alert = await this.alertController.create({
       header: 'Invalid option',
